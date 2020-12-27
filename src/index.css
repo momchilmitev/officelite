@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import-normalize; /* bring in normalize.css styles */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --blue: #5175ff;
+  --light-blue: #829cff;
+  --dark: #25293a;
+  --light-dark: #333950;
+  --gray: #747b95;
+  --red: #f05b5b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+h2 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+h3 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
 }

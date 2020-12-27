@@ -1,0 +1,6 @@
+.cards {
+  position: absolute;
+  top: 890px;
+  z-index: 1;
+  width: 100%;
+}
