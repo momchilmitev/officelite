@@ -5,7 +5,7 @@ import Charts from "../Charts/Charts";
 import Info from "../Info/Info";
 import Button from "../Button/Button";
 import CardList from "../CardList/CardList";
-import Timer from "../Timer/Timer";
+import Countdown from "../Countdown/Countdown";
 
 const Home = () => {
   return (
@@ -21,7 +21,7 @@ const Home = () => {
       <CardList />
       <footer className="footer">
         <div className="container">
-          <Timer />
+          <Countdown year="2020" month="12" day="30" />
           <Button path="/" type="primary" text="Get Started" />
         </div>
       </footer>
