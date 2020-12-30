@@ -1,7 +1,7 @@
-import "./Countdown.css";
+import "./Countdown.scss";
 import React, { useState, useEffect } from "react";
 
-const Countdown = ({ year, month, day }) => {
+const Countdown = ({ year, month, day, classModifier }) => {
   const months = [
     "Jan",
     "Feb",
@@ -37,24 +37,48 @@ const Countdown = ({ year, month, day }) => {
   }, [seconds]);
 
   return (
-    <div className="countdown">
-      <h2 className="countdown__end-date">
+    <div
+      className={`countdown ${
+        classModifier ? "countdown" + classModifier : ""
+      }`}
+    >
+      <h2
+        className={`countdown__end-date ${
+          classModifier ? "countdown__end-date" + classModifier : ""
+        }`}
+      >
         Coming{" "}
         <span>{`${endDate.getDate()} ${
           months[endDate.getMonth()]
         } ${endDate.getFullYear()}`}</span>
       </h2>
       <div className="countdown__elements">
-        <div className="countdown__element countdown--days">
+        <div
+          className={`countdown__element ${
+            classModifier ? "countdown__element" + classModifier : ""
+          }`}
+        >
           <span id="days">{d}</span> days
         </div>
-        <div className="countdown__element countdown--hours">
+        <div
+          className={`countdown__element ${
+            classModifier ? "countdown__element" + classModifier : ""
+          }`}
+        >
           <span id="hours">{h < 10 ? `0${h}` : h}</span> hours
         </div>
-        <div className="countdown__element countdown--minutes">
+        <div
+          className={`countdown__element ${
+            classModifier ? "countdown__element" + classModifier : ""
+          }`}
+        >
           <span id="minutes">{m < 10 ? `0${m}` : m}</span> min
         </div>
-        <div className="countdown__element countdown--seconds">
+        <div
+          className={`countdown__element ${
+            classModifier ? "countdown__element" + classModifier : ""
+          }`}
+        >
           <span id="seconds">{s < 10 ? `0${s}` : s}</span> sec
         </div>
       </div>

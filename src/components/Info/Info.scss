@@ -1,0 +1,20 @@
+.info {
+  text-align: center;
+  margin: 0 24px;
+
+  &__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  &__description {
+    margin: 24px;
+    font-size: 16px;
+    color: var(--gray);
+  }
+
+  &--sign-up {
+    position: absolute;
+    top: 130px;
+  }
+}

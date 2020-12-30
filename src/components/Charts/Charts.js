@@ -1,4 +1,4 @@
-import "./Charts.css";
+import "./Charts.scss";
 import React from "react";
 import charts from "./illustration-charts.svg";
 

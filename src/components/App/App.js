@@ -1,15 +1,17 @@
-import "./App.css";
+import "./App.scss";
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "../Home/Home";
+import SignUp from "../SignUp/SignUp";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route path="/sign-up" component={SignUp} />
         </Switch>
       </div>
     </Router>

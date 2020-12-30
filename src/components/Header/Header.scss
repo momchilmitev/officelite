@@ -1,0 +1,12 @@
+.header {
+  background-image: url("./bg-pattern-header.svg");
+  background-size: 458px;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-position: -42px -170px;
+  height: 1716px;
+
+  &--sign-up {
+    height: 916px;
+  }
+}

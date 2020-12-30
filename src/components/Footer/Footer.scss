@@ -1,0 +1,15 @@
+.footer {
+  position: relative;
+  background-color: var(--dark);
+  background-image: url("./bg-pattern-footer.svg");
+  background-size: 1202px;
+  background-repeat: no-repeat;
+  height: 1248px;
+  background-position: -413px 160px;
+
+  &--sign-up {
+    height: 320px;
+    background-position: -414px -472px;
+    transform: rotate(180deg);
+  }
+}
