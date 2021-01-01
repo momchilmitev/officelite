@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 import Logo from "../Logo/Logo";
 import Info from "../Info/Info";
 import Countdown from "../Countdown/Countdown";
-// import Form from "../Form/Form";
+import Form from "../Form/Form";
 import Footer from "../Footer/Footer";
 
 const title = "Work smarter. Save time.";
@@ -25,7 +25,7 @@ const SignUp = (props) => {
         />
         <Countdown year="2021" month="1" day="27" classModifier="--sign-up" />
       </Header>
-      {/* <Form /> */}
+      <Form />
       <Footer classModifier="--sign-up" />
     </>
   );

@@ -1,5 +1,6 @@
 .btn-container {
   text-align: center;
+  width: 100%;
 }
 
 .btn {
@@ -28,5 +29,14 @@
   &--card--blue {
     background-color: #e4eaff;
     color: var(--blue);
+  }
+
+  &--long {
+    width: 80%;
+    font-size: 18px;
+    background-color: var(--blue);
+    border: none;
+    outline: none;
+    color: #fff;
   }
 }

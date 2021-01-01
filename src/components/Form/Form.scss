@@ -1,0 +1,29 @@
+.form {
+  position: absolute;
+  top: 683px;
+  width: 327px;
+  height: 465px;
+  border-radius: 13px;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &__element {
+    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--gray);
+    line-height: 28px;
+    padding-left: 16px;
+    outline: none;
+    color: #747b95;
+  }
+}
