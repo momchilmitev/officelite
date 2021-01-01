@@ -11,6 +11,8 @@ const Select = () => {
   const [selected, setSelected] = useState(plans[0]);
 
   const toggleOptions = () => {
+    const $select = document.querySelector(".select");
+    $select.classList.toggle("select--rotate");
     setShowOptions(!showOptions);
   };
 

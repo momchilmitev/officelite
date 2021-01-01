@@ -17,6 +17,18 @@
     right: 40px;
   }
 
+  &--rotate::after {
+    content: "";
+    width: 11px;
+    height: 5px;
+    background-image: url("./icon-arrow-down.svg");
+    background-size: 11px 5px;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    transform: rotate(180deg);
+  }
+
   &__options {
     position: absolute;
     top: 60px;
