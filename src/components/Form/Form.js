@@ -7,43 +7,108 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [company, setCompany] = useState("");
+  const [errors, setErrors] = useState({});
 
   const validateForm = (e) => {
     e.preventDefault();
-    console.log("Valid");
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const phone = e.target.phone.value;
+    const company = e.target.company.value;
+
+    if (!name && !email && !phone && !company) {
+      setErrors({
+        name: true,
+        email: true,
+        phone: true,
+        company: true,
+      });
+    }
   };
 
   return (
     <form className="form" onSubmit={validateForm}>
-      <input
-        type="text"
-        placeholder="Name"
-        className="form__element"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        type="email"
-        placeholder="Email Address"
-        className="form__element"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+      <div
+        className={
+          errors["name"]
+            ? "form__element--container form__element--container-error"
+            : "form__element--container"
+        }
+      >
+        <input
+          type="text"
+          placeholder="Name"
+          className={
+            errors["name"]
+              ? "form__element form__element--error"
+              : "form__element"
+          }
+          value={name}
+          name="name"
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+      <div
+        className={
+          errors["email"]
+            ? "form__element--container form__element--container-error"
+            : "form__element--container"
+        }
+      >
+        <input
+          type="email"
+          placeholder="Email Address"
+          className={
+            errors["email"]
+              ? "form__element form__element--error"
+              : "form__element"
+          }
+          value={email}
+          name="email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
       <Select />
-      <input
-        type="tel"
-        placeholder="Phone Number"
-        className="form__element"
-        value={phone}
-        onChange={(e) => setPhone(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Company"
-        className="form__element"
-        value={company}
-        onChange={(e) => setCompany(e.target.value)}
-      />
+      <div
+        className={
+          errors["phone"]
+            ? "form__element--container form__element--container-error"
+            : "form__element--container"
+        }
+      >
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          className={
+            errors["phone"]
+              ? "form__element form__element--error"
+              : "form__element"
+          }
+          value={phone}
+          name="phone"
+          onChange={(e) => setPhone(e.target.value)}
+        />
+      </div>
+      <div
+        className={
+          errors["company"]
+            ? "form__element--container form__element--container-error"
+            : "form__element--container"
+        }
+      >
+        <input
+          type="text"
+          placeholder="Company"
+          className={
+            errors["company"]
+              ? "form__element form__element--error"
+              : "form__element"
+          }
+          value={company}
+          name="company"
+          onChange={(e) => setCompany(e.target.value)}
+        />
+      </div>
       <button className="btn btn--long">Get on the list</button>
     </form>
   );
