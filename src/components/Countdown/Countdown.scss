@@ -8,7 +8,7 @@
   text-align: center;
 
   &--sign-up {
-    top: 462px;
+    top: 396px;
   }
 
   &__end-date {
@@ -38,6 +38,12 @@
     padding: 20px 5px 10px;
     border-radius: 4px;
 
+    & > span {
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
     &--sign-up {
       background-color: #e4eaff;
       color: var(--dark);
@@ -46,11 +52,41 @@
         color: var(--blue);
       }
     }
+  }
+}
 
-    & > span {
-      display: block;
-      font-size: 32px;
-      font-weight: 700;
+@media (min-width: 768px) {
+  .countdown {
+    box-sizing: border-box;
+    bottom: 204px;
+    width: 448px;
+
+    &__element {
+      width: 23%;
+      color: rgba(#fff, 0.5);
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 128px;
+      border-radius: 13px;
+      padding: 0;
+      padding-top: 20px;
+
+      & > span {
+        display: inline-block;
+        font-size: 56px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      &--sign-up {
+        color: var(--gray);
+        height: 128px;
+        & > span {
+          color: var(--blue);
+        }
+      }
     }
   }
 }

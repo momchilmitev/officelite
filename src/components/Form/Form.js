@@ -2,7 +2,7 @@ import "./Form.scss";
 import React, { useState } from "react";
 import Select from "../Select/Select";
 
-const Form = () => {
+const Form = ({ classModifier }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -27,7 +27,10 @@ const Form = () => {
   };
 
   return (
-    <form className="form" onSubmit={validateForm}>
+    <form
+      className={`form ${classModifier ? "form" + classModifier : ""}`}
+      onSubmit={validateForm}
+    >
       <div
         className={
           errors["name"]

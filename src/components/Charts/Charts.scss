@@ -1,8 +1,25 @@
 .charts {
-  text-align: center;
+  position: absolute;
+  top: 156px;
+  left: 50%;
+  transform: translate(-50%, 0);
 
   &__image {
     width: 171px;
     height: 192;
+  }
+}
+
+@media (min-width: 768px) {
+  .charts {
+    text-align: right;
+    top: 225px;
+    right: 0;
+    transform: none;
+
+    &__image {
+      width: 281px;
+      height: 314px;
+    }
   }
 }

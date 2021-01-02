@@ -21,7 +21,7 @@ const Home = () => {
         <Logo />
         <Charts />
         <Info title={title} description={description} />
-        <Button path="/sign-up" type="primary" text="Get Started" />
+        {/* <Button path="/sign-up" type="primary" text="Get Started" /> */}
       </Header>
       <CardList />
       <Footer>

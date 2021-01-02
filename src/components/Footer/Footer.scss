@@ -13,3 +13,28 @@
     transform: rotate(180deg);
   }
 }
+
+.container > .btn {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 986px;
+    background-size: 1454px;
+    background-position: -342px 63px;
+
+    &--sign-up {
+      height: 380px;
+      background-size: 1454px;
+      background-position: -343px -542px;
+    }
+  }
+
+  .container > .btn {
+    bottom: 52px;
+  }
+}

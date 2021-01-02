@@ -10,3 +10,17 @@
     height: 916px;
   }
 }
+
+@media (min-width: 768px) {
+  .header {
+    height: 1196px;
+    background-size: 666px;
+    background-position: 395px -164px;
+
+    &--sign-up {
+      height: 965px;
+      background: initial;
+      background-color: #f2f2f2;
+    }
+  }
+}
