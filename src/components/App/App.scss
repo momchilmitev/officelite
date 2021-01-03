@@ -1,6 +1,10 @@
+.app {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .container {
-    width: 690px;
+    max-width: 690px;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -9,7 +13,7 @@
 
 @media (min-width: 992px) {
   .container {
-    width: 1115px;
+    max-width: 1115px;
     height: 100%;
     display: flex;
     justify-content: space-between;

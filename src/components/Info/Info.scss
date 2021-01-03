@@ -68,7 +68,8 @@
 @media (min-width: 992px) {
   .info {
     top: 285px;
-    width: 540px;
+    width: 60%;
+    max-width: 540px;
     height: 388px;
 
     &__title {
