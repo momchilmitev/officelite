@@ -15,9 +15,9 @@ const description = `Easily manage your projects.
 
 const SignUp = (props) => {
   return (
-    <>
+    <div className="sign-up__container">
       <Header classModifier="--sign-up">
-        <Logo />
+        <Logo classModifier="--sign-up" />
         <Info
           title={title}
           description={description}
@@ -27,7 +27,7 @@ const SignUp = (props) => {
       </Header>
       <Form classModifier="--sign-up" />
       <Footer classModifier="--sign-up" />
-    </>
+    </div>
   );
 };
 

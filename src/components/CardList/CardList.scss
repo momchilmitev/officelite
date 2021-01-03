@@ -10,3 +10,12 @@
     top: 656px;
   }
 }
+
+@media (min-width: 992px) {
+  .cards {
+    // position: relative;
+    top: 928px;
+    width: 100%;
+    height: auto;
+  }
+}

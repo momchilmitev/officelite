@@ -90,3 +90,18 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .countdown {
+    width: 448px;
+    height: 176px;
+    bottom: 91px;
+    left: 0;
+    transform: none;
+
+    &--sign-up {
+      top: 541px;
+      left: 165px;
+    }
+  }
+}

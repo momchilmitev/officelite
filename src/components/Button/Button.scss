@@ -18,6 +18,10 @@
     background-color: var(--blue);
     color: #fff;
     box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.25);
+
+    &:hover {
+      background-color: var(--light-blue);
+    }
   }
 
   &--secondary {
@@ -33,6 +37,10 @@
   &--card--blue {
     background-color: #e4eaff;
     color: var(--blue);
+
+    &:hover {
+      background-color: rgba(#5175ff, 0.5);
+    }
   }
 
   &--long {

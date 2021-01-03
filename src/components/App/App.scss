@@ -6,3 +6,12 @@
     position: relative;
   }
 }
+
+@media (min-width: 992px) {
+  .container {
+    width: 1115px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -64,3 +64,27 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .info {
+    top: 285px;
+    width: 540px;
+    height: 388px;
+
+    &__title {
+      font-size: 56px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
+
+    &--sign-up {
+      height: 236px;
+      text-align: left;
+      top: 265px;
+      left: 165px;
+      transform: none;
+    }
+  }
+}

@@ -23,3 +23,13 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .charts {
+    top: 213px;
+    &__image {
+      width: 475px;
+      height: 531px;
+    }
+  }
+}

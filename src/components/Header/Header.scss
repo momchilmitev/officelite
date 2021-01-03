@@ -24,3 +24,16 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .header {
+    height: 1182px;
+    background-size: 1134px;
+    background-position: 660px -466px;
+
+    &--sign-up {
+      width: 67%;
+      height: 100vh;
+    }
+  }
+}

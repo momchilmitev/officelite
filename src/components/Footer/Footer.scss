@@ -38,3 +38,26 @@
     bottom: 52px;
   }
 }
+
+@media (min-width: 992px) {
+  .footer {
+    height: 603px;
+    background-size: 2167px;
+    background-attachment: scroll;
+    background-position: -742px -663px;
+
+    &--sign-up {
+      width: 33%;
+      height: 100vh;
+      background-size: 2036px;
+      background-position: -838px -318px;
+    }
+  }
+
+  .container > .btn {
+    bottom: 151px;
+    left: unset;
+    right: 165px;
+    transform: none;
+  }
+}
