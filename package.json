@@ -1,7 +1,7 @@
 {
   "name": "officelite",
   "version": "0.1.0",
-  "homepage": "http://momchilmitev.github.io/officelite",
+  "homepage": "https://momchilmitev.github.io/officelite",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
