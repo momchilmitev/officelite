@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/officelite/static/css/main.af1af46c.chunk.css",
+    "main.js": "/officelite/static/js/main.6ce3219e.chunk.js",
+    "main.js.map": "/officelite/static/js/main.6ce3219e.chunk.js.map",
+    "runtime-main.js": "/officelite/static/js/runtime-main.eea4a1a0.js",
+    "runtime-main.js.map": "/officelite/static/js/runtime-main.eea4a1a0.js.map",
+    "static/js/2.96f60121.chunk.js": "/officelite/static/js/2.96f60121.chunk.js",
+    "static/js/2.96f60121.chunk.js.map": "/officelite/static/js/2.96f60121.chunk.js.map",
+    "static/js/3.03d06ae5.chunk.js": "/officelite/static/js/3.03d06ae5.chunk.js",
+    "static/js/3.03d06ae5.chunk.js.map": "/officelite/static/js/3.03d06ae5.chunk.js.map",
+    "index.html": "/officelite/index.html",
+    "static/css/main.af1af46c.chunk.css.map": "/officelite/static/css/main.af1af46c.chunk.css.map",
+    "static/js/2.96f60121.chunk.js.LICENSE.txt": "/officelite/static/js/2.96f60121.chunk.js.LICENSE.txt",
+    "static/media/Footer.scss": "/officelite/static/media/bg-pattern-footer.8d9d044c.svg",
+    "static/media/Header.scss": "/officelite/static/media/bg-pattern-header.d3afcf03.svg",
+    "static/media/Card.scss": "/officelite/static/media/bg-pattern-pricing.44408ab5.svg",
+    "static/media/Select.scss": "/officelite/static/media/icon-check.3b880d19.svg",
+    "static/media/Form.scss": "/officelite/static/media/icon-cross.7328d08b.svg",
+    "static/media/illustration-charts.d82774d5.svg": "/officelite/static/media/illustration-charts.d82774d5.svg",
+    "static/media/logo.2b9872ab.svg": "/officelite/static/media/logo.2b9872ab.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eea4a1a0.js",
+    "static/js/2.96f60121.chunk.js",
+    "static/css/main.af1af46c.chunk.css",
+    "static/js/main.6ce3219e.chunk.js"
+  ]
+}
